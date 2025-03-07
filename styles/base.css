@@ -110,21 +110,21 @@ main{
     order: 0;
 }
 
-.card .haiti{
+.card .Port-au-Prince{
     display: flex;
     align-items: flex-start;
     gap: 20px;
     position: relative;
 }
 
-.card .haiti img{
+.card .Port-au-Prince img{
     width: 180px;
     height: 115px;
     flex-shrink: 0;
     position: absolute;
 }
 
-.card .haiti p{
+.card .Port-au-Prince p{
     margin-left: 12rem;
 }
 
