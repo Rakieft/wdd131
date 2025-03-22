@@ -9,6 +9,8 @@
     --heading-bg-color: #008000;
     --opacity-level: 0.7;
     --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    --headind1: sans-serif;
+    --heading : 'Roboto';
      
 }
 
@@ -26,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-family: Roboto;
+    font-family: var(--headind1);
     color: var(--header-footer-color);
     text-align: center;
     font-size: 3rem;
@@ -56,6 +58,7 @@ picture img {
 
 
 .data, .weather {
+    font-family: var(--headind1);
     opacity: var(--opacity-level);
     background-color: var(--background-color);
     padding: 4px;
@@ -75,6 +78,7 @@ picture img {
 }
 
 .weather h2::after {
+    font-family: var(--heading);
     content: url('piv.svg');
     display: inline-block;
     margin-left: 10px;
@@ -90,7 +94,7 @@ picture img {
 
 
 .data h2, .weather h2 {
-    font-family: sans-serif;
+    font-family: var(--headind1);
     background-color: var(--heading-bg-color);
     color: var(--header-footer-color);
     padding:10px 10px 10px 15px;
