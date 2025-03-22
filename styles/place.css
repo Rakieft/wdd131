@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #b90000;
+    --secondary-color: darkgreen;
+    --background-color: whitesmoke;
+    --text-color: black;
+    --header-footer-color: white;
+    --heading-bg-color: #008000;
+    --opacity-level: 0.7;
+    --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+     
+}
+
+
+body {
+    font-family: var(--paragraph);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    
+    color: var(--header-footer-color);
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+.container {
+    
+    border-top: 15px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+
+picture {
+    display: flex;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.data, .weather {
+    opacity: var(--opacity-level);
+    background-color: var(--background-color);
+    padding: 4px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+}
+
+.data {
+    top: 3%;
+    left: 20px;
+}
+
+.weather {
+    top: 50%;
+    right: 20px;
+}
+
+
+.weather img {
+    position: absolute;
+    width: 70px;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
+
+.data h2, .weather h2 {
+    background-color: var(--heading-bg-color);
+    color: var(--header-footer-color);
+    padding:10px 10px 10px 15px;
+    margin: 10px 15px 10px -20px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--header-footer-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 1253px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        border-top: 15px solid var(--secondary-color);
+    }
+
+    .data, .weather {
+        position: static;
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+
+    }
+
+    .data {
+        border-bottom: 2px solid gray;
+    }
+
+    picture img {
+        border-bottom: 10px solid var(--primary-color);
+    }
+
+    .data h2, .weather h2 {
+        background-color: white;
+        color: black;
+    }
+
+    .weather {
+        max-width: 100%; 
+    }
+
+    .weather img {
+        position: static;
+        margin: 0 auto 15px;
+        width: 70px;
+        height: auto;
+    }
+}

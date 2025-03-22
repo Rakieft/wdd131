@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"  content="WDD 131 - Dynamic Web Fundamentals">
+        <meta name="author" content="Kieft Raphter Joly">
+        <title>WDD 131 - Dynamic Web Fundamentals - Kieft Raphter Joly</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="scripts/place.js" defer></script>
+    </head>
+
+    <body>
+
+    
+        <header>
+        <h1>Haiti</h1>
+        </header>
+
+        <main>
+        <div class="container">
+
+
+                    <picture>
+                        <source srcset="images/priv.webp" media="(min-width: 1000px)" type="image/web">
+                        <source srcset="images/priv.webp" media="(min-width: 550px)" type="image/web">
+                        <img src="images/priv.webp" alt="culture" width="400" height="200">
+                    </picture>
+
+                        <!-- The Data -->
+                    <div class="data">
+                        <h2>Data</h2>
+                        <p><strong>Area:</strong> 27 750 sq km</p>
+                        <p><strong>Population:</strong> 11.64 Million</p>
+                        <p><strong>Capital:</strong> Port au Prince</p>
+                        <p><strong>Languages:</strong> Haitian Creole, French</p>
+                        <p><strong>Currency:</strong> Gourdes</p>
+                        <p><strong>Time Zone:</strong> GMT -4</p>
+                        <p><strong>Calling Code:</strong> +509</p>
+                        <p><strong>Internet TLD:</strong> .ht</p>
+                    </div>
+
+                        <!-- The weather -->
+                    <div class="weather">
+                        <h2>Weather</h2><br>
+                        <img src="images/piv.svg" alt="Weather">
+                        <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+                        <p><strong>Conditions:</strong> <span id="conditions">Loading...</span></p>
+                        <p><strong>Wind-speed:</strong> <span id="wind-speed">Loading...</span></p>
+                        <p><strong>Wind Chill:</strong> <span id="wind-chill">Loading...</span></p>
+                    </div>
+        </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentyear">2025 </span>✌️Kieft Raphter Joly,✌️Port-au-Prince</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
