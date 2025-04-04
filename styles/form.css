@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-container {
+    background-color:  #FFCDD2 ;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container header {
+    background-color:  #C62828;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.review-container main {
+    padding: 20px;
+    background-color:  #FCE4EC;
+    border-radius: 15px;
+}
+
+.review-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+    
+
+
+.review-container select,
+.review-container input[type="date"],
+.review-container input[type="text"],
+.review-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-container .rating {
+    display: flex;
+}
+
+
+
+.review-container .rating label {
+    font-size: 20px;
+}
+
+.review-container .features {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.review-container .features input {
+    margin-right: 5px;
+}
+
+label span {
+    color: black;
+    font-style: italic;
+}
+
+.review-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.review-container button:hover {
+    background-color: #34163e;
+}
+
+.review-container footer {
+    background-color: #C62828;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #f2eef3;
+    font-size: 14px;
+}
+
+
+/* stars */
+
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px; 
+    color: #111111;
+} 
+
+.star-label label {
+    font-size: 24px; 
+    
+}
+
+
+
+
+@media (max-width: 32rem){
+    .stars{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
