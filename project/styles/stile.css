@@ -259,5 +259,9 @@
     margin-right: 10px;
     padding: 5px;
    }
+
+   .section ul{
+    margin-left: 25px;
+   }
    
 }
