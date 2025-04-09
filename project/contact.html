@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - MySite</title>
+  <meta name="description"  content="Product Review">
+  <meta name="author" content="Kieft Raphter Joly">
+  <title>Contact ♻️Recyclonet</title>
   <link rel="stylesheet" href="styles/stile.css" />
+  
 </head>
+
+<!-- header -->
 <body>
-    <header class="site-header">
-        <div class="container nav-container">
-          <div class="logo-section">
-            <h1 class="logo">♻️Recyclonet</h1>
-          </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="cta-button">
-              <a href="contact.html"> Contact Us</button></a>
-          </nav>
-        </div>
-      </header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo-section">
+        <h1 class="logo">♻️Recyclonet</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="index.html" class="cta-button">Back to Home</a>
+      </nav>
+    </div>
+  </header>
+  <!-- header end -->
 
   <main class="section">
     <div class="container">
@@ -37,9 +42,9 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div>
-            <label for="phone">Number phone *</label>
-            <input type="phone" id="phone" name="phone" required />
-          </div>
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
         <div>
           <label for="message">Message *</label>
           <textarea id="message" name="message" rows="5" required></textarea>
@@ -50,8 +55,13 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 MySite. All rights reserved.</p>
-    </div>
+<!-- footer start -->
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Kieft Raphter Joly</p>
+    <p>Haiti</p>
+    <p id="lastModified"></p>
   </footer>
+
+  <script src="scripts/scripte.js"></script>
+</body>
+</html>

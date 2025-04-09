@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - MySite</title>
+  <meta name="description"  content="Product Review">
+  <meta name="author" content="Kieft Raphter Joly">
+  <title>About Recyclonet</title>
   <link rel="stylesheet" href="styles/stile.css" />
+ 
+ 
 </head>
 <body>
-    <header class="site-header">
-        <div class="container nav-container">
-          <div class="logo-section">
-            <h1 class="logo">♻️Recyclonet</h1>
-          </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="cta-button">
-              <a href="contact.html"> Contact Us</button></a>
-          </nav>
-        </div>
-      </header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo-section">
+        <h1 class="logo">♻️Recyclonet</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="section">
     <div class="container">
       <h2>About Us</h2>
       <p>
-        Welcome to [Your Company Name], your trusted partner for a clean, healthy, and environmentally friendly environment.
+        Welcome to ♻️Recyclonet, your trusted partner for a clean, healthy, and environmentally friendly environment.
         We offer comprehensive cleaning, waste removal, and recycling services, as well as a range of eco-friendly<br>
-        cleaning products to meet all your needs, at home and at work..
+        cleaning products to meet all your needs, at home and at work.
       </p>
 
       <h3>Our Goals</h3>
@@ -48,17 +51,24 @@
         <li>A genuine commitment to environmental protection.</li>
         <li>Natural products for uncompromising cleaning, a local and human approach, close to our community.</li>
       </ul>
-        
-      
+    </div>
+
+    <div class="pub-container">
+      <img src="image/product.png" alt="Promotional Product Image">
+      <div class="pub-texte">
+        <h2>Special Offer</h2>
+        <p>Discover our new product at a reduced price for a limited time. Quality guaranteed, satisfaction guaranteed!</p>
+        <a href="contact.html" class="cta-button">Buy now</a>
+      </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 MySite. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Kieft Raphter Joly</p>
+    <p>Haiti</p>
+    <p id="lastModified"></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts/scripte.js"></script>
 </body>
 </html>
