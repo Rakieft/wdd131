@@ -98,18 +98,11 @@
     border: none;
     cursor: pointer;
     font-weight: 600;
-  }
-  
-  .btn.dark {
     background-color: #343a40;
-    color: white;
+    color: #ffffff;
   }
   
-  .btn.light {
-    background-color: white;
-    color: #343a40;
-    border: 1px solid #343a40;
-  }
+  
   
   /* Section Titles */
   .section {
@@ -217,6 +210,10 @@
     .hero-grid {
         flex-direction: column;
       }
+
+    .hero-image img{
+      margin-left: 5px;
+    }  
       
     .feature-item img{
         margin-left: 32%;
